@@ -1,0 +1,65 @@
+<!-- BREAK POINT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* PC */
+        @media (min-width: 64em) {
+            .pc {
+                display: block;
+            }
+
+            .tablet {
+                display: none;
+            }
+
+            .mobile {
+                display: none;
+            }
+        }
+        /* Tablet */
+        @media (min-width: 46.25em) and (max-width: 64em) {
+            .tablet {
+                display: block;
+            }
+
+            .pc {
+                display: none;
+            }
+
+            .mobile {
+                display: none;
+            }
+        }
+        /* Mobile */
+        @media (max-width: 46.25em) {
+            .mobile {
+                display: block;
+            }
+
+            .pc {
+                display: none;
+            }
+
+            .tablet {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pc">
+        <p>PC</p>
+    </div>
+    <div class="tablet">
+        <p>tablet</p>
+    </div>
+    <div class="mobile">
+        <p>mobile</p>
+    </div>
+</body>
+</html>
